@@ -35,10 +35,10 @@ cd "$name" || exit
     echo "Dear user thankyou for using our GLBAL PROJECT INITIALIZATION" >> README.md
     echo "Here are some guidelines on how you are going to start working with the project" >> README.md
     echo "for the python project, a directory and virtual environment was created and activated for your project to be in a more adequate space of work" >>README.md
-    echo "It might require you to install some libaries to carry out your project efficientely" >> README
-    echo "We eventually created a python file for you to type your codes in a good environment" >> README
-    echo "To run your code in the terminal when finished saving it you can use the command 'python <name of file>' or python3 <name of file>" >> README
-    echo "We hope this few guide lines help you to achieve a better understanding on how to work with your project and achieve the best, GOOD LUCK!!!"
+    echo "It might require you to install some libaries to carry out your project efficientely" >> README.md
+    echo "We eventually created a python file for you to type your codes in a good environment" >> README.md
+    echo "To run your code in the terminal when finished saving it you can use the command 'python <name of file>' or python3 <name of file>" >> README.md
+    echo "We hope this few guide lines help you to achieve a better understanding on how to work with your project and achieve the best, GOOD LUCK!!!"README.md
 
     # Set up a virtual environment
     echo "Setting up a virtual environment..."
