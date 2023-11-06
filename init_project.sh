@@ -18,13 +18,11 @@ project_type() {
     echo "Setting up a virtual environment..."
     python3 -m venv venv
     source venv/bin/activate
-    echo "Virtual environment created and activated."
+    echo "Your Virtual environment has been created and activated."
 
   elif [[ $choice -eq 2 ]]; then
-    # Create a Bash starter file
     echo "Creating a Bash starter file..."
     touch starter.sh
-    echo "#!/bin/bash" >> starter.sh
     echo "echo 'Hello user, this file was created for your Bash script project'" >> starter.sh
 
     # Generate a README file with run instructions
@@ -35,7 +33,7 @@ project_type() {
     echo "To run the starter script, execute the following command on your terminal:" >> README.md
     echo "./starter.sh" >> README.md
     echo "If an error message pops up saying permission denied, then meaning you don't have the xecution permission">> README.md
-    echo "./So inorder to solve this issue you will run this command 'chmod 777 starter.sh' then './starter.sh' to execute" >> README.md
+    echo "So inorder to solve this issue you will run this command 'chmod 777 starter.sh' then './starter.sh' to execute" >> README.md
     echo "If you renamed your script, replace 'starter.sh' with the actual name of your script." >> README.md
   else
     echo "Invalid choice. please enter a valid choice..."
