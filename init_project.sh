@@ -63,13 +63,13 @@ cd "$name" || exit
     echo "If an error message pops up saying permission denied, then meaning you don't have the xecution permission">> README.md
     echo "./So inorder to solve this issue you will run this command 'chmod 777 starter.sh' then './starter.sh' to execute" >> README.md
     echo "If you renamed your script, replace 'starter.sh' with the actual name of your script." >> README.md
-    echo "Dear user thankyou for using our GLBAL PROJECT INITIALIZATION" >> README>
-    echo "Here are some guidelines on how you are going to start working with the "
-    echo "for the bash project, a directory was actually  created for the project to be carried out in it "
-    echo " "
-    echo "We eventually created a bash  file for you to type your codes in a good and adequate environment"
-    echo "To run your code in the terminal when finished saving it you can use the the following command './<name of file>'"
-    echo "Hope this guide line give you a brief and clear understanding  on how to work with your project and achieve the best, GOOD LUCK!!!"
+    echo "Dear user thankyou for using our GLBAL PROJECT INITIALIZATION" >> README.md
+    echo "Here are some guidelines on how you are going to start working with the ">> README.md
+    echo "for the bash project, a directory was actually  created for the project to be carried out in it ">> README.md
+    echo " ">> README.md
+    echo "We eventually created a bash  file for you to type your codes in a good and adequate environment">> README.md
+    echo "To run your code in the terminal when finished saving it you can use the the following command './<name of file>'">> README.md
+    echo "Hope this guide line give you a brief and clear understanding  on how to work with your project and achieve the best, GOOD LUCK!!!">> README.md
 
   else
     echo "Invalid choice. please enter a valid choice..."
