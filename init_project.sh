@@ -1,4 +1,5 @@
 #!/bin/bash
+project_type() {
 echo "Hello user, welcome to our global project initialization script !!!"
 echo "Hope you will like it"
 echo "*******************************************************************"
@@ -16,8 +17,7 @@ mkdir "$name"
 echo "**************************************************************************"
 echo "A directory named $name was created for this project."
 cd "$name" || exit
-# Project type
-project_type() {
+# Project ty
   echo "Please select which project you would like to work on:"
   echo "1. Python"
   echo "2. Bash"
@@ -88,8 +88,27 @@ project_type() {
 	exit 1
 	fi
   fi
+# Makes the script globally accessible
+make_script_globally_accessible() {
+  echo "Making the script globally accessible..."
+
+  # Add ~/bin to the user's PATH if not already present
+  if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then
+    echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+    echo "Added ~/bin to the PATH in ~/.bashrc"
+  fi
+
+  # Move the script to ~/bin and make it executable
+  mv "$0" ~/bin/init_project
+  chmod +x ~/bin/init_project
+
+  echo "Script is now accessible globally."
+
+  # Provide steps to reload the shell profile
+  echo "To make the changes take effect, please run the following command:"
+  echo "source ~/.bashrc"
 
   echo "Project initialization completed successfully."
 }
-
+project_type
 # Call the project_type function to s
