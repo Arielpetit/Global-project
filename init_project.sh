@@ -38,7 +38,7 @@ cd "$name" || exit
     echo "It might require you to install some libaries to carry out your project efficientely" >> README.md
     echo "We eventually created a python file for you to type your codes in a good environment" >> README.md
     echo "To run your code in the terminal when finished saving it you can use the command 'python <name of file>' or python3 <name of file>" >> README.md
-    echo "We hope this few guide lines help you to achieve a better understanding on how to work with your project and achieve the best, GOOD LUCK!!!"README.md
+    echo "We hope this few guide lines help you to achieve a better understanding on how to work with your project and achieve the best, GOOD LUCK!!!">>README.md
 
     # Set up a virtual environment
     echo "Setting up a virtual environment..."
